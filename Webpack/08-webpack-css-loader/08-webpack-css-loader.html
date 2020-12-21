@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08-webpack-css-loader</title>
+</head>
+<body>
+<!--
+1.css-loader
+和图片一样webpack默认能不能处理CSS文件, 所以也需要借助loader将CSS文件转换为webpack能够处理的类型
+
+2.css-loader使用:
+2.1安装cssloader
+npm install --save-dev css-loader
+2.2安装styleloader
+npm install style-loader --save-dev
+2.3配置css-loader
+{
+    test: /\.css$/,
+    use: [ 'style-loader', 'css-loader' ]
+}
+
+3.css-loader和style-loader作用
+css-loader:   解析css文件中的@import依赖关系
+style-loader: 将webpack处理之后的内容插入到HTML的HEAD代码中
+-->
+</body>
+</html>

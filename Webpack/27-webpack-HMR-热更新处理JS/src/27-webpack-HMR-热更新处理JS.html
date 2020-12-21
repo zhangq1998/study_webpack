@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>27-webpack-HMR-热更新处理JS</title>
+</head>
+<body>
+<!--
+1.JS模块使用HMR注意点?
+import "./index.less"
+对于css模块而言, 在css-loader中已经帮我们实现了热更新, 只要css代码被修改就会立即更新
+import copy from "./test.js"
+但是对于js模块而言, 系统默认并没有给我们实现热更新, 所以修改了js模块代码并不会立即更新
+
+2.JS模块如何实现热更新?
+2.1手动监听模块变化
+if(module.hot){ // 判断是否开启热更新
+    module.hot.accept("./test.js", function () { // 监听指定JS模块变化
+
+    });
+}
+2.2手动编写模块变化后的业务逻辑
+if(module.hot){
+    module.hot.accept("./test.js", function () {
+        let div = document.querySelector("div");
+        console.log(div);
+        document.body.removeChild(div);
+        copy();
+    });
+}
+-->
+</body>
+</html>

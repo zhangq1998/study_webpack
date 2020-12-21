@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-webpack配置文件</title>
+</head>
+<body>
+<!--
+1.什么是webpack配置文件?
+我们在打包JS文件的时候需要输入:  npx webpack index.js
+这句指令的含义是: 利用webpack将index.js和它依赖的模块打包到一个文件中
+其实在webpack指令中除了可以通过命令行的方式告诉webpack需要打包哪个文件以外,
+还可以通过配置文件的方式告诉webpack需要打包哪个文件
+
+2.webpack常见配置
+entry: 需要打包的文件
+output: 打包之后输出路径和文件名称
+mode: 打包模式  development/production
+development: 不会压缩打包后的JS代码
+production:  会自动压缩打包后的JS代码
+-->
+<!--<script src="dist/main.js"></script>-->
+<script src="bundle/bundle.js"></script>
+</body>
+</html>

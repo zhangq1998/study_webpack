@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-webpack配置文件注意点</title>
+</head>
+<body>
+<!--
+1.webpack配置注意事项
+配置文件的名称必须叫做: webpack.config.js, 否则直接输入 npx webpack打包会出错
+如果要使用其它名称, 那么在输入打包命令时候必须通过 --config 指定配置文件名称
+npx webpack --config xxx
+
+2.打包命令简化
+每次输入npx webpack --config xxx来打包文件会有一点蛋疼, 所以我们可以通过npm script来简化这个操作
+-->
+<script src="bundle/bundle.js"></script>
+</body>
+</html>
